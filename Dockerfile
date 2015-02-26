@@ -1,7 +1,7 @@
 #
 # TN5250J Dockerfile
 #
-# https://github.com/
+#  Terminal Emulator
 #
 
 # Pull base image.
