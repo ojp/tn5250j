@@ -17,11 +17,5 @@ RUN cd /tmp && unzip tn5250j-0.7.5-full-bin.zip  -d tn5250
 RUN cd /tmp/tn5250 && mv tn5250j-0.7.5 /usr/local/tn5250j
 RUN rm -rf /var/lib/apt/lists/*
 
-# Set environment variables.
-ENV HOME /root
-
-# Define working directory.
-WORKDIR /root
-
 # Define default command.
 CMD ["/usr/bin/java","-jar","/usr/local/tn5250j/tn5250j.jar"]
